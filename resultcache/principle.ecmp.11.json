@@ -1,0 +1,1 @@
+{"pairs": {"ping": ["h1", "h4"], "iperf": [["h2", "h3"]]}, "routing_time": 0, "sequential": {"ping": {"avg": 0.118, "mdev": 0.182}, "iperfs": [827000]}, "parallel": {"ping": {"avg": 24.234, "mdev": 72.522}, "iperfs": [1100000]}}

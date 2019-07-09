@@ -1,0 +1,11 @@
+Latency (concurrent),OSPF (single-path),LDR (single-path),MinMax (single-path),LDR (multi-path),ECMP (multi-path),All
+Binary Tree,343.69 ms,344.13 ms,344.33 ms,343.25 ms,344.24 ms,343.93 ms
+5-layered CLOS,343.65 ms,342.78 ms,343.36 ms,306.31 ms,146.70 ms,296.56 ms
+B-Cube,11.66 ms,17.53 ms,12.68 ms,67.84 ms,33.48 ms,28.64 ms
+Fat Tree,156.51 ms,156.23 ms,156.90 ms,68.09 ms,53.67 ms,118.28 ms
+Grid,193.80 ms,180.29 ms,187.01 ms,153.61 ms,116.54 ms,166.25 ms
+D-Cell,107.61 ms,106.78 ms,107.33 ms,89.34 ms,90.61 ms,100.34 ms
+Bipartite,19.91 ms,19.93 ms,20.39 ms,9.31 ms,8.33 ms,15.58 ms
+3-layered CLOS,20.39 ms,19.86 ms,19.78 ms,13.58 ms,45.66 ms,23.85 ms
+Triangle,76.26 ms,78.36 ms,75.98 ms,76.97 ms,23.13 ms,66.14 ms
+All,141.50 ms,140.66 ms,140.86 ms,125.37 ms,95.82 ms,128.84 ms

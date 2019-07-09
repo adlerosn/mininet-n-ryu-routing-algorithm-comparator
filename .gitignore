@@ -1,0 +1,4 @@
+**/*.pyc
+*.pyc
+*.apa.json
+*.state
