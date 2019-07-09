@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/195912876.svg)](https://zenodo.org/badge/latestdoi/195912876)
+
 # Mininet+Ryu Routing algorithm Comparator
 A bunch of scripts and files that describe topology creation, the topologies,
 the testing data, real-time graph rendering, table creation and chart creation.
