@@ -17,6 +17,9 @@ testdcell:
 	-rm -f nohup.out
 	-rm -f dcellswitched.autotest.json
 
+viewer:
+	./topoviewer.py
+
 generatetopos:
 	./topocreatedcell.py
 	./topocreatedcellswitched.py
@@ -78,3 +81,11 @@ simpletree.json:
 
 principle.json:
 	./topomn2json.py principle
+
+clear:
+	rm -rf boxplots
+	rm -rf resultcache
+	rm -rf *.json
+	rm -rf *.pdf
+	rm -rf *.pdf.bw.txt
+	rm -rf *.state
