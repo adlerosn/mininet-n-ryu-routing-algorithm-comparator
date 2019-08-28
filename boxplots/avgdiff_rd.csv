@@ -1,0 +1,11 @@
+Routing response time,OSPF (single-path),LDR (single-path),MinMax (single-path),LDR (multi-path),ECMP (multi-path)
+Binary Tree,0.0 s,0.0 s,0.0 s,0.0 s,0.0 s
+5-layered CLOS,0.0 s,0.0 s,0.0 s,0.0 s,0.0 s
+B-Cube,0.0 s,0.0 s,0.0 s,0.0 s,0.0 s
+Fat Tree,3.8 s,2.6 s,4.1 s,-8.3 s,-2.2 s
+Grid,0.0 s,0.0 s,0.0 s,0.0 s,0.0 s
+D-Cell,0.0 s,0.0 s,0.0 s,0.0 s,0.0 s
+Bipartite,0.0 s,0.0 s,0.0 s,0.0 s,0.0 s
+3-layered CLOS,0.0 s,0.0 s,0.0 s,0.0 s,0.0 s
+Triangle,0.0 s,0.0 s,0.0 s,0.0 s,0.0 s
+All,0.4 s,0.3 s,0.5 s,-0.9 s,-0.2 s

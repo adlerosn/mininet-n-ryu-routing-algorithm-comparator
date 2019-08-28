@@ -1,0 +1,12 @@
+| Latency (sequential) | OSPF (single-path) | LDR (single-path) | MinMax (single-path) | LDR (multi-path) | ECMP (multi-path) |
+| -------------------- | ------------------ | ----------------- | -------------------- | ---------------- | ----------------- |
+| Binary Tree          | 2.68 ms            | -0.68 ms          | -0.69 ms             | -0.63 ms         | -0.68 ms          |
+| 5-layered CLOS       | -0.00 ms           | -0.01 ms          | -0.01 ms             | 0.01 ms          | 0.02 ms           |
+| B-Cube               | -2.05 ms           | -2.03 ms          | -2.03 ms             | 8.13 ms          | -2.02 ms          |
+| Fat Tree             | -0.01 ms           | -0.01 ms          | -0.00 ms             | -0.02 ms         | 0.04 ms           |
+| Grid                 | -0.04 ms           | -0.02 ms          | -0.04 ms             | 0.11 ms          | -0.00 ms          |
+| D-Cell               | 1.99 ms            | -1.37 ms          | 2.01 ms              | -1.29 ms         | -1.34 ms          |
+| Bipartite            | -0.02 ms           | -0.01 ms          | -0.01 ms             | 0.04 ms          | 0.00 ms           |
+| 3-layered CLOS       | -0.03 ms           | -0.02 ms          | -0.02 ms             | 0.05 ms          | 0.01 ms           |
+| Triangle             | -0.02 ms           | -0.02 ms          | -0.02 ms             | 0.06 ms          | -0.00 ms          |
+| All                  | 0.28 ms            | -0.46 ms          | -0.09 ms             | 0.72 ms          | -0.44 ms          |

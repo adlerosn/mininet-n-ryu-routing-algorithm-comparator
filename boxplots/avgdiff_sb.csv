@@ -1,0 +1,11 @@
+Bandwidth (sequential),OSPF (single-path),LDR (single-path),MinMax (single-path),LDR (multi-path),ECMP (multi-path)
+Binary Tree,0.1 kbps,0.1 kbps,-0.8 kbps,0.6 kbps,0.1 kbps
+5-layered CLOS,16.0 kbps,16.3 kbps,15.3 kbps,7.2 kbps,-54.9 kbps
+B-Cube,30.8 kbps,30.3 kbps,29.8 kbps,-41.1 kbps,-49.9 kbps
+Fat Tree,24.8 kbps,24.3 kbps,24.8 kbps,-25.4 kbps,-48.4 kbps
+Grid,26.2 kbps,25.8 kbps,26.1 kbps,-25.9 kbps,-52.2 kbps
+D-Cell,16.4 kbps,16.9 kbps,16.0 kbps,-3.4 kbps,-45.9 kbps
+Bipartite,4.8 kbps,4.7 kbps,4.8 kbps,22.2 kbps,-36.6 kbps
+3-layered CLOS,3.8 kbps,3.8 kbps,3.6 kbps,15.6 kbps,-26.9 kbps
+Triangle,29.1 kbps,25.8 kbps,25.1 kbps,-9.9 kbps,-70.1 kbps
+All,16.9 kbps,16.4 kbps,16.1 kbps,-6.7 kbps,-42.8 kbps

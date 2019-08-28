@@ -38,6 +38,7 @@ def tbl2tex(table):
         ).splitlines()
     ]
     return (
+        '\\rowcolors{1}{white}{black!10!white}\n' +
         '\\begin{tabular}{' + clh + '}\n' +
         '\n'.join([head, '\\hline', *tail]) +
         '\n\\end{tabular}'
@@ -304,15 +305,25 @@ def main(results, outfolder):
                 for persp in metrics
             } for topo in topos
         } for algo in algos}
+    avgdiffdb = {
+        algo: {
+            topo: {
+                persp: avgdb[algo][topo][persp] - avgdb['all'][topo][persp]
+                for persp in metrics
+            } for topo in topos
+        } for algo in algos if algo != 'all'}
     for metric in metrics:
         formatter = FMTS[metric]
-        tbl = build_table(avgdb, algos, topos, metric, formatter, PHRASES)
-        outtexfile = Path(outfolder).joinpath(f'avg_{metric}.tex')
-        outcsvfile = Path(outfolder).joinpath(f'avg_{metric}.csv')
-        outmdfile = Path(outfolder).joinpath(f'avg_{metric}.md')
-        outtexfile.write_text(tbl2tex(tbl))
-        outcsvfile.write_text(tbl2csv(tbl))
-        outmdfile.write_text(tbl2md(tbl))
+        for prefix, tbl in [
+            ('avg', build_table(avgdb, algos, topos, metric, formatter, PHRASES)),
+            ('avgdiff', build_table(avgdiffdb, [algo for algo in algos if algo != 'all'], topos, metric, formatter, PHRASES))
+        ]:
+            outtexfile = Path(outfolder).joinpath(f'{prefix}_{metric}.tex')
+            outcsvfile = Path(outfolder).joinpath(f'{prefix}_{metric}.csv')
+            outmdfile = Path(outfolder).joinpath(f'{prefix}_{metric}.md')
+            outtexfile.write_text(tbl2tex(tbl))
+            outcsvfile.write_text(tbl2csv(tbl))
+            outmdfile.write_text(tbl2md(tbl))
     longer_phrases = Phrases(PHRASES)
     phrases = Phrases({**PHRASES, **PHRASES_BOXPLOT_PATCH})
     for algo in algos:
